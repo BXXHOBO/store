@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="col-sm-11">
+				<input type="text" class="form-control" placeholder="搜索商品" style="border-radius: 35px;height: 70px;" />
+
+			</div>
+
+			<img src="img/filter.png" class="btn" style="width: 70px;height: 70px;" />
+		</nav>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div class="row">
+			<div class="card">
+				<div class="card-body col-sm-3" style="height: 1000px;">
+					<ul class="nav nav-pills nav-stacked" id="myTab" role="tablist" style="background-color: #f6f6f6;height: 1600px;position: fixed;">
+						<li class="nav-item active" style="height: 8%;">
+							<a class="nav-link text-center text-center" id="home-tab" data-toggle="tab" href="#home" role="tab"
+							 aria-controls="home" aria-selected="true">
+								<strong style="font-size: 37px;color: #000000;"><img src="img/热门.png" />今日优惠</strong>
+							</a>
+						</li>
+
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+							 aria-selected="false">
+								<strong style="font-size: 37px;color: #000000;"><img src="img/热门.png" />进口鲜果</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+							 aria-selected="false">
+
+								<strong style="font-size: 37px;color: #000000;"><img src="img/热门.png" />时令鲜果</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">今日鲜果</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">车厘子</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">甜橘橙柚</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">奇异果</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">草莓/蓝莓</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">葡萄/提子</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">桃杏李</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">苹果/梨</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">瓜类</strong>
+							</a>
+						</li>
+						<li class="nav-item" style="height: 8%;">
+							<a class="nav-link text-center" id="haddop-tab" data-toggle="tab" href="#haddop" role="tab" aria-controls="haddop"
+							 aria-selected="false">
+
+								<strong style="font-size: 40px;color: #000000;">果干/零食</strong>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-sm-9 tab-pane" id="myTabContent">
+					<div class="active tab-pane row" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						
+						<hr style="border: 1px solid #e6e6e6;" />
+
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						
+						<hr style="border: 1px solid #e6e6e6;" />
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						
+						<hr style="border: 1px solid #e6e6e6;" />
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						
+						<hr style="border: 1px solid #e6e6e6;" />
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						
+						<hr style="border: 1px solid #e6e6e6;" />
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						
+						<hr style="border: 1px solid #e6e6e6;" />
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+						<hr style="border: 1px solid #e6e6e6;" />
+						<div class="col-sm-12">
+							<div class="col-sm-11">
+								<img src="img/帝王蕉.jpg" style="width: 250px;height: 250px;" class="pull-left">
+								<h2>菲律宾帝王香蕉*8根 约3斤</h2>
+								<h3>规格：约1500g</h3>
+								<br />
+								<h2><strong style="color: red;">￥38.0</strong>/份</h2>
+						
+							</div>
+							<div class="col-sm-1" style="margin-top: 150px;">
+								<button class="btn pull-right" style="background-color: white;">
+									<img src="img/添加.png">
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="col-sm-8">
+							<h3>时令鲜果</h3>
+
+						</div>
+						<div class="col-sm-4">
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+		<footer class="navbar navbar-default navbar-fixed-bottom">
+
+			<div class="col-sm-3">
+				<a class="btn btn-block" href="home.html">
+					<img src="img/home.png" style="width: 50px;height: 50px;" />
+					<br />
+					<p style="color: #bfbfbf;">首页</p>
+				</a>
+			</div>
+
+			<div class="col-sm-3">
+				<a class="btn btn-block" href="classify.html">
+					<img src="img/classifypion.png" style="width: 50px;height: 50px;" />
+					<br />
+					<p style="color: #d81e06;">分类</p>
+				</a>
+			</div>
+
+			<div class="col-sm-3">
+				<a class="btn btn-block" href="shoppingcart.html">
+					<img src="img/shoppingcart.png" style="width: 50px;height: 50px;" />
+					<br />
+					<p style="color: #bfbfbf;">购物车</p>
+				</a>
+			</div>
+
+			<div class="col-sm-3">
+				<a class="btn btn-block" href="user.html">
+					<img src="img/user.png" style="width: 50px;height: 50px;" />
+					<br />
+					<p style="color: #bfbfbf;">我的</p>
+				</a>
+			</div>
+
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>
